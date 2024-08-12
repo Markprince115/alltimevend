@@ -18,9 +18,9 @@ const Services = () => {
       {/* content */}
       <div className="flex items-center justify-center w-full mt-7 px-5">
         {/* grid col */}
-        <div className="grid grid-cols-1 md:grid-cols-3 px-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-5">
           {/* first Cols */}
-          <div>
+          <div className="border border-orange-500 rounded-md p-2">
             <div className="flex items-center justify-center text-center">
               <Image src={VENDING} width={300} alt="vending store" />
             </div>
@@ -29,7 +29,7 @@ const Services = () => {
               Unmanned automated retail store with cutting-edge technology
             </p>
             <div className="flex items-center justify-center mt-3">
-              <button className="bg-transparent border border-orange-500 px-7 py-3 text-white">
+              <button className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500 mb-5">
                 {" "}
                 Read more
               </button>
@@ -37,7 +37,7 @@ const Services = () => {
           </div>
 
           {/* first Cols */}
-          <div>
+          <div className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500 mb-5">
             <div className="flex items-center justify-center text-center">
               <Image src={FUEL} width={300} alt="vending store" />
             </div>
@@ -46,14 +46,14 @@ const Services = () => {
               Unmanned automated parcel locker with cutting-edge technology
             </p>
             <div className="flex items-center justify-center mt-3">
-              <button className="bg-transparent border border-orange-500 px-7 py-3 text-white">
+              <button className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500">
                 {" "}
                 Read more
               </button>
             </div>
           </div>
           {/* first Cols */}
-          <div>
+          <div className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500 mb-5">
             <div className="flex items-center justify-center text-center">
               <Image src={VENDING} width={300} alt="vending store" />
             </div>
@@ -61,10 +61,12 @@ const Services = () => {
               {" "}
               Unmanned automated fuel pump with cutting-edge technology
             </p>
-            <button className="bg-transparent border border-orange-500 px-7 py-3 text-white">
-              {" "}
-              Read more
-            </button>
+            <div className="flex items-center justify-center">
+              <button className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500">
+                {" "}
+                Read more
+              </button>
+            </div>
           </div>
         </div>
       </div>

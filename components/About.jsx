@@ -35,7 +35,7 @@ const About = () => {
               </p>
               {/* button */}
               <div className="mt-4">
-                <button className="bg-orange-600 px-7 py-5 text-white text-sm text-left">
+                <button className="bg-orange-600 px-7 py-5 text-white text-sm text-left transition-all ease-in-out hover:bg-transparent hover:text-neutral-800 border border-orange-500">
                   {" "}
                   Read more
                 </button>

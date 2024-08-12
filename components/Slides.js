@@ -1,6 +1,6 @@
 import Slide1 from '../assets/slide1.webp'
 import Slide2 from '../assets/slide2.jpg'
-import Slide3 from '../assets/slide3.jpg'
+import Slide3 from "../assets/slide3.jpg"
 export const slides = [
     {
         image:

@@ -16,7 +16,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 0) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={
         scrolled
-          ? "fixed w-full flex items-center justify-between bg-black shadow-md p-5 z-10 transition-all ease-in-out duration-300"
+          ? "fixed w-full flex items-center justify-between bg-[#fffaf5] shadow-md p-5 z-10 transition-all ease-in-out duration-300"
           : "fixed w-full flex items-center justify-between bg-transparent p-5 z-10 transition-all ease-in-out duration-300"
       }
     >
@@ -44,7 +44,7 @@ const Header = () => {
       <nav>
         <ul
           className={`hidden md:flex items-center justify-center ${
-            scrolled ? "text-neutral-50" : "text-neutral-200"
+            scrolled ? "text-neutral-800" : "text-neutral-50"
           } gap-10 cursor-pointer`}
         >
           <li>Home</li>
@@ -58,7 +58,7 @@ const Header = () => {
       <div
         onClick={handleNav}
         className={`md:hidden text-3xl font-bold ${
-          scrolled ? "text-neutral-700" : "text-neutral-200"
+          scrolled ? "text-neutral-700" : "text-neutral-50"
         } cursor-pointer`}
       >
         {!nav ? <RiMenu3Line /> : <LiaTimesSolid />}
@@ -67,7 +67,7 @@ const Header = () => {
       {/* mobile nav toggle */}
       {!nav ? (
         <nav className="hidden">
-          <ul>
+          <ul className="text-neutral-800 flex flex-col items-center justify-center">
             <Link href="/">
               <li>Home</li>
             </Link>
@@ -83,8 +83,8 @@ const Header = () => {
           </ul>
         </nav>
       ) : (
-        <nav className="md:hidden max-w-[50%] bg-white absolute top-0 left-0 right-0">
-          <ul className="text-white text-center">
+        <nav className="md:hidden max-w-[50%] h-screen bg-white absolute top-0 left-0 right-0 transition-all ease-in-out duration-300">
+          <ul className="text-neutral-800 flex flex-col items-center justify-center gap-5 text-center mt-20">
             <Link href="/">
               <li>Home</li>
             </Link>

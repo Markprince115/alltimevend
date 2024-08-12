@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 4000); // Changes every 4 seconds
+    }, 5000); // Changes every 4 seconds
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -28,7 +28,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-[80dvh] md:h-screen overflow-hidden">
+    <section className="relative w-full h-[80dvh] md:h-screen overflow-hidden -z-0">
       {/* Image carousel */}
       {slides.map((slide, index) => (
         <div
@@ -45,15 +45,21 @@ const Hero = () => {
               layout="fill" // Ensure images cover the container
             />
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-70"></div>
           </div>
 
           {/* Slides text */}
           <div className="absolute top-0 left-0 right-0 mt-[10rem] md:mt-[15rem] text-center text-white z-10">
-            <h2 className="font-bold text-3xl md:text-8xl text-orange-500">
+            <h2 className="font-bold text-4xl md:text-8xl text-orange-500">
               {slide.title}
             </h2>
             <p className="my-2 text-[18px]">{slide.p}</p>
+
+            <div className="flex items-center justify-center text-center">
+              <button className="bg-orange-500 py-3 p-10 text-sm rounded-full">
+                Get started
+              </button>
+            </div>
           </div>
 
           {/* Arrow navigation */}

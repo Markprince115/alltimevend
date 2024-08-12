@@ -9,7 +9,7 @@ body{
 }
 .services{
   background: url('../assets/slide3.jpg')no-repeat center;
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(16, 16, 16);
   background-blend-mode: overlay;
   background-attachment: fixed;
 }
