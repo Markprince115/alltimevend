@@ -11,7 +11,7 @@ export const slides = [
     {
         image: Slide2,
         title: "AllTimeVend",
-        p: "Unmannaned automated fuel pump services operation at your conveinence.",
+        p: "Revolutionalizing retail with automated smart shelves.",
     },
     {
         image:

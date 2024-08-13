@@ -1,6 +1,7 @@
 import Image from "next/image";
 import VENDING from "../assets/vending.webp";
 import FUEL from "../assets/petrolpump.jpg";
+import PARCEL from "../assets/parcel.avif";
 import React from "react";
 const Services = () => {
   return (
@@ -20,7 +21,7 @@ const Services = () => {
         {/* grid col */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-5">
           {/* first Cols */}
-          <div className="border border-orange-500 rounded-md p-2">
+          <div className="border border-orange-500 rounded-md p-2 transition-all ease-in-out hover:bg-orange-500 mb-5">
             <div className="flex items-center justify-center text-center">
               <Image src={VENDING} width={300} alt="vending store" />
             </div>
@@ -43,7 +44,7 @@ const Services = () => {
             </div>
             <p className="text-center text-neutral-50 p-5">
               {" "}
-              Unmanned automated parcel locker with cutting-edge technology
+              Unmanned automated fuel pump with cutting-edge technology
             </p>
             <div className="flex items-center justify-center mt-3">
               <button className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500">
@@ -55,11 +56,11 @@ const Services = () => {
           {/* first Cols */}
           <div className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500 mb-5">
             <div className="flex items-center justify-center text-center">
-              <Image src={VENDING} width={300} alt="vending store" />
+              <Image src={PARCEL} width={300} alt="vending store" />
             </div>
             <p className="text-center text-neutral-50 p-5">
               {" "}
-              Unmanned automated fuel pump with cutting-edge technology
+              Unmanned automated parcel locker for product pick-up
             </p>
             <div className="flex items-center justify-center">
               <button className="bg-transparent border border-orange-500 px-7 py-3 text-white transition-all ease-in-out hover:bg-orange-500">

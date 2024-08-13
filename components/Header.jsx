@@ -16,7 +16,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 0) {
+    if (window.scrollY >= 10) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -35,9 +35,11 @@ const Header = () => {
     >
       {/* logo icon */}
       <div>
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-orange-500">
-          AllTimeVend
-        </h2>
+        <Link href="/">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-orange-500">
+            AllTimeVend
+          </h2>
+        </Link>
       </div>
 
       {/* nav list */}
@@ -47,10 +49,18 @@ const Header = () => {
             scrolled ? "text-neutral-800" : "text-neutral-50"
           } gap-10 cursor-pointer`}
         >
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <Link href="/">
+            <li>Home</li>
+          </Link>
+          <Link href="/about">
+            <li>About</li>
+          </Link>
+          <Link href="/">
+            <li>Services</li>
+          </Link>
+          <Link href="/contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </nav>
 
@@ -88,13 +98,13 @@ const Header = () => {
             <Link href="/">
               <li>Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <li>About</li>
             </Link>
             <Link href="/">
               <li>Services</li>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <li>Contact</li>
             </Link>
           </ul>

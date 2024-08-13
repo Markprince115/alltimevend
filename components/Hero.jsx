@@ -53,7 +53,7 @@ const Hero = () => {
             <h2 className="font-bold text-4xl md:text-8xl text-orange-500">
               {slide.title}
             </h2>
-            <p className="my-2 text-[18px]">{slide.p}</p>
+            <p className="my-2 text-[18px] px-5">{slide.p}</p>
 
             <div className="flex items-center justify-center text-center">
               <button className="bg-orange-500 py-3 p-10 text-sm rounded-full">
