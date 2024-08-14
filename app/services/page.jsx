@@ -1,9 +1,10 @@
 import Image from "next/image";
 import TEAM from "../../assets/team.avif";
+import ENGINEER from "../../assets/engineer.webp";
 
 const services = () => {
   return (
-    <section className="py-10 bg-[#fffaf5]">
+    <section className="pb-10">
       <div className="w-full h-[80dvh] service">
         <h2 className="text-3xl font-bold text-center pt-[15rem] text-white">
           {" "}
@@ -37,7 +38,7 @@ const services = () => {
 
             {/* third col */}
             <div className="flex items-center justify-center">
-              <Image src="" alt="" />
+              <Image src={ENGINEER} alt="engineer" />
             </div>
 
             {/* forth col */}
