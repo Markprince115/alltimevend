@@ -1,9 +1,9 @@
-import { Aclonica } from "next/font/google";
+import { Acme } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const  aclonica = Aclonica({ subsets: ["latin"], weight: '400' });
+const  acme = Acme({ subsets: ["latin"], weight: '400' });
 
 export const metadata = {
   title: "AllTimeVend | Home page",
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ aclonica.className}>
+      <body className={ acme.className}>
         <Header />
         {children}
         <Footer />

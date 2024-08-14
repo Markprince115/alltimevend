@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { LiaTimesSolid } from "react-icons/lia";
 import Link from "next/link";
@@ -15,15 +15,17 @@ const Header = () => {
   //   change background onScroll
   const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY >= 10) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -55,7 +57,7 @@ const Header = () => {
           <Link href="/about">
             <li>About</li>
           </Link>
-          <Link href="/">
+          <Link href="/services">
             <li>Services</li>
           </Link>
           <Link href="/contact">
