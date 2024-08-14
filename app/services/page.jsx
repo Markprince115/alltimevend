@@ -25,7 +25,7 @@ const services = () => {
                 including sales record, <br />
                 inventory level monitoring, tracking of sales and sales support.{" "}
               </p>
-              <p>
+              <p className="mt-5">
                 Let us optimize your retail operations for maximum efficiency
                 and profitability.
               </p>
@@ -37,12 +37,12 @@ const services = () => {
             </div>
 
             {/* third col */}
-            <div className="flex items-center justify-center">
-              <Image src={ENGINEER} alt="engineer" />
+            <div className="flex items-center justify-center pt-10">
+              <Image src={ENGINEER} width={500} alt="engineer" />
             </div>
 
             {/* forth col */}
-            <div className="mr-5">
+            <div className="mr-5 pt-10">
               <p>
                 We also Offer hardware operations and installations services
                 forn automated nanostores, kiosks, ATG syatems, fuel pump,{" "}
@@ -50,11 +50,11 @@ const services = () => {
                 smart Lockers and proprietary hybrid-powered machines and
                 solutions.
               </p>
-              <p>
+              <p className="mt-5">
                 We also ensure seamless integration and optimal performance of
                 retail automation texchnologies for your business.
               </p>
-              <button className="bg-orange-500 text-white px-7 py-3">
+              <button className="bg-orange-500 text-white px-7 py-3 mt-5">
                 Contact Us
               </button>
             </div>
