@@ -13,7 +13,7 @@ const services = () => {
       </div>
       <section className="w-full">
         <div className="flex items-center justify-center w-full">
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 place-items-center p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center p-3">
             {/* first Col */}
             <div className="">
               <h2 className="text-3xl text-neutral-800 font-bold">
