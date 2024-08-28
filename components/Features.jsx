@@ -69,8 +69,8 @@ const Features = () => {
               <FaTruckMoving />
             </div>
             <p>
-              Increased flexibility: easily o relocate <br />
-              or expand your retail presence.
+              Increased flexibility: easily to relocate <br />
+             or expand your retail presence.
             </p>
           </div>
         </div>
