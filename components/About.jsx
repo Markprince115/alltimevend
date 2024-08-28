@@ -27,7 +27,7 @@ const About = () => {
                 {" "}
                 With a focus quality of innovation, efficiency, durability, and
                 availability, AllTimeVend provides cutting-edge and
-                uninterrupted power supply for seamless shoopping experience.
+                uninterrupted power supply for seamless shopping experience.
               </p>
 
               <p className="text-neutral-700 text-left my-3">
