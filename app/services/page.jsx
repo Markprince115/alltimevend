@@ -52,7 +52,7 @@ const services = () => {
               </p>
               <p className="mt-5">
                 We also ensure seamless integration and optimal performance of
-                retail automation texchnologies for your business.
+                retail automation technologies for your business.
               </p>
               <button className="bg-orange-500 text-white px-7 py-3 mt-5">
                 Contact Us
