@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-10">
         {/* first grid */}
         <div>
-          <h2 className="text-3xl font-bold text-orange-500 text-left pl-4">
+          <h2 className="text-2xl font-bold text-orange-500 text-left pl-4">
             AllTimeVend
           </h2>
           <p className="text-neutral-400 mt-3 px-4">
